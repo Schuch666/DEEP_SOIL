@@ -24,7 +24,7 @@ wget https://www2.mmm.ucar.edu/wrf/contributed/IPXWRF_WRFV3.1.tar.gz
 ## 2. To run MADIS (download observations to obsgrid), choose a folder to put the data:
 
 ```
-export MADIS_DATA=/scratch/$USER/WRF/OBSGRID/MADIS_DATA
+export MADIS_DATA=/scratch/$USER/OBSGRID/MADIS_DATA
 
 mkdir -p $MADIS_DATA/point/maritime/netcdf
 mkdir -p $MADIS_DATA/point/metar/netcdf
@@ -120,8 +120,8 @@ output: `wrfsfdda_d0*`
 mkdir met
 mkdir little_r
 link or copy all the met_em and all little_r
-ln -s /glade/scratch/schuch/CAMx/WRF/OBSGRID/MADIS_DATA/little_r_obs/2021*/metar/METAR_LITTLE_R_20* .
-ln -s /glade/scratch/schuch/CAMx/WRF/OBSGRID/MADIS_DATA/little_r_obs/2022*/metar/METAR_LITTLE_R_20* .
+ln -s /scratch/$USER/OBSGRID/MADIS_DATA/little_r_obs/2021*/metar/METAR_LITTLE_R_20* .
+ln -s /scratch/$USER/OBSGRID/MADIS_DATA/little_r_obs/2022*/metar/METAR_LITTLE_R_20* .
 ```
 
 link all `met/little_r` files to OBSGRID root (folder that contains the obsgrid.exe)
