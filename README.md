@@ -3,7 +3,7 @@
 Repository to save updated instructions to run WRF using deep soil nudging options
 
 ## 1. Software:
-#### madis library
+### madis library
 wget https://madis-data.ncep.noaa.gov/source/madis-4.3.tar.gz
 
 ### MADIS api to download the data
@@ -23,7 +23,9 @@ wget https://www2.mmm.ucar.edu/wrf/contributed/IPXWRF_WRFV3.1.tar.gz
 
 2. For MADIS, choose a folder to put the data:
 
+```
 export MADIS_DATA=/glade/scratch/schuch/CAMx/WRF/OBSGRID/MADIS_DATA
+
 mkdir -p $MADIS_DATA/point/maritime/netcdf
 mkdir -p $MADIS_DATA/point/metar/netcdf
 mkdir -p $MADIS_DATA/point/sao/netcdf
@@ -47,6 +49,7 @@ mkdir -p $MADIS_DATA/point/POES/netcdf
 mkdir -p $MADIS_DATA/point/satrad/netcdf
 mkdir -p $MADIS_DATA/LDAD/snow/netCDF
 mkdir -p $MADIS_DATA/LDAD/WISDOM/netCDF
+```
 
 # edit the time to download the data
 nano ftp.par1.txt    ### set start/end
