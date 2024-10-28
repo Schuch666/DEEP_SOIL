@@ -64,7 +64,7 @@ make sure to export MADIS_DATA variable (see above)
 ## PASS: anonymous
 ```
 
-the (intermediary) data is in $MADIS_DATA/point/metar/netcdf folder
+the (intermediary) data is in `$MADIS_DATA/point/metar/netcdf` folder
 
 # next step need madis Lib
 export MADIS_BIN=/glade/scratch/schuch/CAMx/WRF/OBSGRID/madis/bin
