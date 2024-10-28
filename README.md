@@ -107,36 +107,50 @@ the output is in `$MADIS_DATA/little_r_obs/YYYYMMDDHH/metar/METAR_LITTLE_R_YYYY-
 ## 4. OBSGRID
 
 input:  a. `met_em` files from WPS
+
         b. LITTLE r files from MADIS to LITTLE r (step 3)
+        
 output: `wrfsfdda_d0*`
 
+```
 mkdir met
 mkdir little_r
-# link or copy all the met_em and all little_r
+link or copy all the met_em and all little_r
 ln -s /glade/scratch/schuch/CAMx/WRF/OBSGRID/MADIS_DATA/little_r_obs/2021*/metar/METAR_LITTLE_R_20* .
 ln -s /glade/scratch/schuch/CAMx/WRF/OBSGRID/MADIS_DATA/little_r_obs/2022*/metar/METAR_LITTLE_R_20* .
+```
 
-link met/little_r files to OBSGRID root (folder that contains the obsgrid.exe)
+link all `met/little_r` files to OBSGRID root (folder that contains the obsgrid.exe)
 
-# script to link the files in little_r for obs:<date>
+script to link the files in little_r for obs:<date>
+```
 chmod +x create_links.sh
 ./create_links.sh
+```
 
-# copy the original working obsgrid namelist
-# change the date
+copy the original working obsgrid namelist
+change the date
+```
 cp namelist.obsgrid.d01 namelist.oa
 ./obsgrid.exe > log.obsgrid.d01
+```
 
-# change the domain
+change the domain
+```
 cp namelist.obsgrid.d02 namelist.oa
 ./obsgrid.exe > log.obsgrid.d02
+```
 
-# change the domain
+change the domain
+```
 cp namelist.obsgrid.d02 namelist.oa
 ./obsgrid.exe > log.obsgrid.d03
+```
 
 NOTE about the namelist options:
+
 - RECOMMENDED OPTIONS
+```
 # to record4
 qc_test_error_max = .TRUE.
 qc_test_buddy = .TRUE.
@@ -164,6 +178,9 @@ intf4d = 10800,
 # to record9
 oa_type = 'Cressman'
 radius_influence = 20,15,10,5
+```
 
-# TO CLEAN RESULTS FROM PREVIOUS RUN
+TO CLEAN RESULTS FROM PREVIOUS RUN
+```
 rm *.nc qc_obs_* plotobs_out.d0* OBS_DOMAIN* obs:20* wrfsfdda_d0*
+```
