@@ -104,10 +104,11 @@ nano run_madis_to_little_r.ksh
 
 the output is in $MADIS_DATA/little_r_obs/YYYYMMDDHH/metar/METAR_LITTLE_R_YYYY-MM-DD_HH
 
-4. OBSGRID
-input:  a. met_em files from WPS
-        b. LITTLE r files from MADIS to LITTLE r
-output: wrfsfdda_d0[1-3]
+## 4. OBSGRID
+
+input:  a. `met_em` files from WPS
+        b. LITTLE r files from MADIS to LITTLE r (step 3)
+output: `wrfsfdda_d0*`
 
 mkdir met
 mkdir little_r
