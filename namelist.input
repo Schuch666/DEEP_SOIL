@@ -10,8 +10,8 @@
  rinblw                              = 250., 250., 250.,
  grid_fdda                           = 1, 1, 1,
  gfdda_inname                        = "wrffdda_d<domain>"
- gfdda_interval_m                    = 9999, 9999, 9999,
- gfdda_end_h                         = 9999, 9999, 9999,
+ gfdda_interval_m                    = 360, 360, 360,
+ gfdda_end_h                         = 109, 109, 109,
  guv                                 = 0.0003, 0.0003, 0.0003,
  gt                                  = 0.0003, 0.0003, 0.0003,
  gq                                  = 1e-5, 1e-5, 1e-5,
