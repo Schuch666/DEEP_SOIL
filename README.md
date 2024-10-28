@@ -87,7 +87,7 @@ NOTE from run_MADIS_API_unix.pl lines 124-127:
 
 ```./run_MADIS_API_unix.pl > log_run_api.txt```
 
-The output is the sfcdump.txt file
+The output: `sfcdump.txt`
 
 ## 3. MADIS to LITTLE r
 
