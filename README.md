@@ -3,7 +3,7 @@
 Repository to save updated instructions to run WRF using deep soil nudging options
 
 ## 1. Software:
-### madis library
+### MADIS library
 wget https://madis-data.ncep.noaa.gov/source/madis-4.3.tar.gz
 
 ### MADIS api to download the data
@@ -14,6 +14,8 @@ wget https://www2.mmm.ucar.edu/wrf/src/MADIS2LITTLER_V1.2.tar.gz
 
 ### WRF OBSGRID
 wget https://www2.mmm.ucar.edu/wrf/src/OBSGRID.tar.gz
+
+### To update Soil Temperature
 
 to update wrfinput soil temp. and soil hum. using wrfout from previous simulation used with WRF (don't need this step)
 
