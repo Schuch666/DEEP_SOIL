@@ -21,7 +21,7 @@ used with WRF (don't need this step)
 
 wget https://www2.mmm.ucar.edu/wrf/contributed/IPXWRF_WRFV3.1.tar.gz
 
-2. For MADIS, choose a folder to put the data:
+## 2. For MADIS, choose a folder to put the data:
 
 ```
 export MADIS_DATA=/glade/scratch/schuch/CAMx/WRF/OBSGRID/MADIS_DATA
