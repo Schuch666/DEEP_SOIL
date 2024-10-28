@@ -157,7 +157,7 @@ cp namelist.obsgrid.d02 namelist.oa
 
 NOTE about the namelist options:
 
-- RECOMMENDED OPTIONS
+- Recomended options
 ```
 # to record4
 qc_test_error_max = .TRUE.
@@ -188,7 +188,7 @@ oa_type = 'Cressman'
 radius_influence = 20,15,10,5
 ```
 
-TO CLEAN RESULTS FROM PREVIOUS RUN
+To clean results from previsous run
 ```
 rm *.nc qc_obs_* plotobs_out.d0* OBS_DOMAIN* obs:20* wrfsfdda_d0*
 ```
