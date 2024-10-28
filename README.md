@@ -21,7 +21,7 @@ used with WRF (don't need this step)
 
 wget https://www2.mmm.ucar.edu/wrf/contributed/IPXWRF_WRFV3.1.tar.gz
 
-## 2. For MADIS, choose a folder to put the data:
+## 2. To run MADIS (download observations to obsgrid), choose a folder to put the data:
 
 ```
 export MADIS_DATA=/glade/scratch/schuch/CAMx/WRF/OBSGRID/MADIS_DATA
@@ -52,11 +52,13 @@ mkdir -p $MADIS_DATA/LDAD/WISDOM/netCDF
 ```
 
 edit the time to download the data
+
 ```
 nano ftp.par1.txt    ### set start/end
 ```
 
 make sure to export MADIS_DATA variable (see above)
+
 ```
 ./get_MADIS_Data_unix.pl
 ## USE THIS!
@@ -66,30 +68,39 @@ make sure to export MADIS_DATA variable (see above)
 
 the (intermediary) data is in `$MADIS_DATA/point/metar/netcdf` folder
 
+```
 # next step need madis Lib
 export MADIS_BIN=/glade/scratch/schuch/CAMx/WRF/OBSGRID/madis/bin
 export MADIS_STATIC=/glade/scratch/schuch/CAMx/WRF/OBSGRID/madis/static
 export MADIS_DATA=/glade/scratch/schuch/CAMx/WRF/OBSGRID/MADIS_DATA
+```
 
-nano api.par1.txt   ### set start/end
+`nano api.par1.txt   ### set start/end`
 
-## NOTE from run_MADIS_API_unix.pl lines 124-127:
+NOTE from run_MADIS_API_unix.pl lines 124-127:
+```
 ## # Line 4 start time in "YYYYMMDD HH" format
 ## my($stime) = shift(@pars);
 ## # Line 5 end time in "YYYYMMDD HH" format
 ## my($etime) = shift(@pars);
+```
 
-./run_MADIS_API_unix.pl > log_run_api.txt
+```./run_MADIS_API_unix.pl > log_run_api.txt```
 
 The output is the sfcdump.txt file
 
-3. MADIS to LITTLE r
-input:  sfcdump.txt
-output: METAR_LITTLE_R_YYYY-MM-DD_HH
+## 3. MADIS to LITTLE r
+
+input file:  sfcdump.txt
+
+output file: METAR_LITTLE_R_YYYY-MM-DD_HH
+
+```
 # set MADIS_DATA,MADIS_STATIC,CODE_DIR
 # set SDATE=YYYYMMDDHH and EDATE=YYYYMMDDHH
 nano run_madis_to_little_r.ksh
 ./run_madis_to_little_r.ksh
+```
 
 the output is in $MADIS_DATA/little_r_obs/YYYYMMDDHH/metar/METAR_LITTLE_R_YYYY-MM-DD_HH
 
