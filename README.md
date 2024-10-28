@@ -24,7 +24,7 @@ wget https://www2.mmm.ucar.edu/wrf/contributed/IPXWRF_WRFV3.1.tar.gz
 ## 2. To run MADIS (download observations to obsgrid), choose a folder to put the data:
 
 ```
-export MADIS_DATA=/glade/scratch/schuch/CAMx/WRF/OBSGRID/MADIS_DATA
+export MADIS_DATA=/scratch/$USER/WRF/OBSGRID/MADIS_DATA
 
 mkdir -p $MADIS_DATA/point/maritime/netcdf
 mkdir -p $MADIS_DATA/point/metar/netcdf
@@ -51,6 +51,8 @@ mkdir -p $MADIS_DATA/LDAD/snow/netCDF
 mkdir -p $MADIS_DATA/LDAD/WISDOM/netCDF
 ```
 
+**NOTE:** the variable **MADIS_DATA** can be exported to the environment
+
 edit the time to download the data
 
 ```
@@ -72,8 +74,10 @@ the (intermediary) data is in `$MADIS_DATA/point/metar/netcdf` folder
 # next step need madis Lib
 export MADIS_BIN=/scratch/$USER/OBSGRID/madis/bin
 export MADIS_STATIC=/scratch/$USER/OBSGRID/madis/static
-export MADIS_DATA=/scratch/$USER/WRF/OBSGRID/MADIS_DATA
 ```
+
+**NOTE:** the variable **MADIS_BIN** and **MADIS_STATIC** be exported to the environment
+
 
 `nano api.par1.txt   ### set start/end`
 
