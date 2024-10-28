@@ -17,7 +17,7 @@ wget https://www2.mmm.ucar.edu/wrf/src/OBSGRID.tar.gz
 
 ### To update Soil Temperature
 
-to update wrfinput soil temp. and soil hum. using wrfout from previous simulation used with WRF (don't need this step)
+to update wrfinput soil temp. and soil hum. using wrfout from previous simulation used with WRF (this step is not required)
 
 wget https://www2.mmm.ucar.edu/wrf/contributed/IPXWRF_WRFV3.1.tar.gz
 
