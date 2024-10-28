@@ -70,9 +70,9 @@ the (intermediary) data is in `$MADIS_DATA/point/metar/netcdf` folder
 
 ```
 # next step need madis Lib
-export MADIS_BIN=/glade/scratch/schuch/CAMx/WRF/OBSGRID/madis/bin
-export MADIS_STATIC=/glade/scratch/schuch/CAMx/WRF/OBSGRID/madis/static
-export MADIS_DATA=/glade/scratch/schuch/CAMx/WRF/OBSGRID/MADIS_DATA
+export MADIS_BIN=/scratch/$USER/OBSGRID/madis/bin
+export MADIS_STATIC=/scratch/$USER/OBSGRID/madis/static
+export MADIS_DATA=/scratch/$USER/WRF/OBSGRID/MADIS_DATA
 ```
 
 `nano api.par1.txt   ### set start/end`
