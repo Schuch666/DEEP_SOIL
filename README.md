@@ -110,10 +110,12 @@ the output is in `$MADIS_DATA/little_r_obs/YYYYMMDDHH/metar/METAR_LITTLE_R_YYYY-
 
 ## 4. OBSGRID
 
-input:  a. `met_em` files from WPS
+input:  
 
-        b. LITTLE r files from MADIS to LITTLE r (step 3)
-        
+a. `met_em` files from WPS
+
+b. LITTLE r files from MADIS to LITTLE r (step 3)        
+
 output: `wrfsfdda_d0*`
 
 ```
