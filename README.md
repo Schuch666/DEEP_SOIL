@@ -93,7 +93,7 @@ The output: `sfcdump.txt`
 
 input file:  sfcdump.txt
 
-output file: METAR_LITTLE_R_YYYY-MM-DD_HH
+output files: METAR_LITTLE_R_YYYY-MM-DD_HH
 
 ```
 # set MADIS_DATA,MADIS_STATIC,CODE_DIR
