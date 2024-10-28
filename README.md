@@ -51,14 +51,18 @@ mkdir -p $MADIS_DATA/LDAD/snow/netCDF
 mkdir -p $MADIS_DATA/LDAD/WISDOM/netCDF
 ```
 
-# edit the time to download the data
+edit the time to download the data
+```
 nano ftp.par1.txt    ### set start/end
+```
 
-# make sure to export MADIS_DATA variable (see above)
+make sure to export MADIS_DATA variable (see above)
+```
 ./get_MADIS_Data_unix.pl
 ## USE THIS!
 ## USER: anonymous
 ## PASS: anonymous
+```
 
 the (intermediary) data is in $MADIS_DATA/point/metar/netcdf folder
 
