@@ -122,8 +122,10 @@ output: `wrfsfdda_d0*`
 mkdir met
 mkdir little_r
 link or copy all the met_em and all little_r
-ln -s /scratch/$USER/OBSGRID/MADIS_DATA/little_r_obs/2021*/metar/METAR_LITTLE_R_20* .
-ln -s /scratch/$USER/OBSGRID/MADIS_DATA/little_r_obs/2022*/metar/METAR_LITTLE_R_20* .
+cd met
+ln -s /scratch/$USER/OBSGRID/met/met_em.d0* .
+cd ../little_r
+ln -s /scratch/$USER/OBSGRID/MADIS_DATA/little_r_obs/*/metar/METAR_LITTLE_R_* .
 ```
 
 link all `met/little_r` files to OBSGRID root (folder that contains the obsgrid.exe)
