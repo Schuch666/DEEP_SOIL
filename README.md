@@ -91,9 +91,9 @@ The output: `sfcdump.txt`
 
 ## 3. MADIS to LITTLE r
 
-input file:  sfcdump.txt
+input file:  `sfcdump.txt`
 
-output files: METAR_LITTLE_R_YYYY-MM-DD_HH
+output files: `METAR_LITTLE_R_YYYY-MM-DD_HH`
 
 ```
 # set MADIS_DATA,MADIS_STATIC,CODE_DIR
@@ -102,7 +102,7 @@ nano run_madis_to_little_r.ksh
 ./run_madis_to_little_r.ksh
 ```
 
-the output is in $MADIS_DATA/little_r_obs/YYYYMMDDHH/metar/METAR_LITTLE_R_YYYY-MM-DD_HH
+the output is in `$MADIS_DATA/little_r_obs/YYYYMMDDHH/metar/METAR_LITTLE_R_YYYY-MM-DD_HH`
 
 ## 4. OBSGRID
 
