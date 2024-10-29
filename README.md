@@ -2,7 +2,7 @@
 
 Repository to save updated instructions to run WRF using deep soil nudging options
 
-## 1. Software:
+## 0. Get the software:
 ### MADIS library
 ```
 wget https://madis-data.ncep.noaa.gov/source/madis-4.3.tar.gz
@@ -30,7 +30,9 @@ to update wrfinput soil temp. and soil hum. using wrfout from previous simulatio
 ```
 wget https://www2.mmm.ucar.edu/wrf/contributed/IPXWRF_WRFV3.1.tar.gz
 ```
-## 2. To run MADIS (download observations to obsgrid), choose a folder to put the data:
+## 1. Download observations using MADIS
+
+choose a folder (**MADIS_DATA**) to download the data:
 
 ```
 export MADIS_DATA=/scratch/$USER/OBSGRID/MADIS_DATA
@@ -102,7 +104,7 @@ NOTE from run_MADIS_API_unix.pl lines 124-127:
 
 The output: `sfcdump.txt`
 
-## 3. MADIS to LITTLE r
+## 2. Convert MADIS to LITTLE r
 
 input file:  `sfcdump.txt`
 
@@ -117,7 +119,7 @@ nano run_madis_to_little_r.ksh
 
 the output is in `$MADIS_DATA/little_r_obs/YYYYMMDDHH/metar/METAR_LITTLE_R_YYYY-MM-DD_HH`
 
-## 4. OBSGRID
+## 3. OBSGRID
 
 input:  
 
