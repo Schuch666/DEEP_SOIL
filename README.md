@@ -130,8 +130,6 @@ ln -s /scratch/$USER/OBSGRID/MADIS_DATA/little_r_obs/*/metar/METAR_LITTLE_R_* .
 cd ..
 ```
 
-Link all `met/little_r` files to OBSGRID root (folder that contains the obsgrid.exe)
-
 Script to link the files in little_r for obs:<date>
 ```
 chmod +x create_links.sh
