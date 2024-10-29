@@ -72,10 +72,10 @@ Make sure to export MADIS_DATA variable (see above)
 ## PASS: anonymous
 ```
 
-the (intermediary) data is in `$MADIS_DATA/point/metar/netcdf` folder
+the (intermediary) data is in `$MADIS_DATA/point/metar/netcdf` folder.
 
+Next step need madis Lib variables set on environment:
 ```
-# next step need madis Lib
 export MADIS_BIN=/scratch/$USER/OBSGRID/madis/bin
 export MADIS_STATIC=/scratch/$USER/OBSGRID/madis/static
 ```
