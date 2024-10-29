@@ -129,13 +129,9 @@ b. LITTLE r files from MADIS to LITTLE r (step 3)
 
 output: `wrfsfdda_d0*`
 
+Link or copy all the `met_em` and all `little_r` files to obsgrid folder:
 ```
-mkdir met
-mkdir little_r
-link or copy all the met_em and all little_r
-cd met
-ln -s /scratch/$USER/OBSGRID/met/met_em.d0* .
-cd ../little_r
+ln -s /scratch/$USER/WPS/met/met_em.d0* .
 ln -s /scratch/$USER/OBSGRID/MADIS_DATA/little_r_obs/*/metar/METAR_LITTLE_R_* .
 ```
 
