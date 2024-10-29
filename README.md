@@ -23,13 +23,6 @@ wget https://www2.mmm.ucar.edu/wrf/src/MADIS2LITTLER_V1.2.tar.gz
 wget https://www2.mmm.ucar.edu/wrf/src/OBSGRID.tar.gz
 ```
 
-### IPXWRF (optional)
-
-To update wrfinput soil temp. and soil hum. using wrfout from previous simulation used with WRF (this step is not required)
-
-```
-wget https://www2.mmm.ucar.edu/wrf/contributed/IPXWRF_WRFV3.1.tar.gz
-```
 ## 1. Download observations using MADIS
 
 Choose a folder (**MADIS_DATA**) to download the data:
