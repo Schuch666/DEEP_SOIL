@@ -184,6 +184,13 @@ intf4d = 10800,
 oa_type = 'Cressman'
 radius_influence = 20,15,10,5
 ```
+NOTE about missing obs:YYYY-MM-DD_HH files:
+
+Missing files cause the obsgrid.exe to crash, they can be replaced by empty files using `touch` command, for example 2023-04-11, hour 21:
+
+```
+touch obs:2023-04-11_21
+```
 
 To clean results from previsous run:
 ```
