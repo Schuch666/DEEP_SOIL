@@ -23,7 +23,7 @@ wget https://www2.mmm.ucar.edu/wrf/src/MADIS2LITTLER_V1.2.tar.gz
 wget https://www2.mmm.ucar.edu/wrf/src/OBSGRID.tar.gz
 ```
 
-### IPXWRF
+### IPXWRF (optional)
 
 To update wrfinput soil temp. and soil hum. using wrfout from previous simulation used with WRF (this step is not required)
 
