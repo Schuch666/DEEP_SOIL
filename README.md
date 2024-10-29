@@ -32,7 +32,7 @@ wget https://www2.mmm.ucar.edu/wrf/contributed/IPXWRF_WRFV3.1.tar.gz
 ```
 ## 1. Download observations using MADIS
 
-choose a folder (**MADIS_DATA**) to download the data:
+Choose a folder (**MADIS_DATA**) to download the data:
 
 ```
 export MADIS_DATA=/scratch/$USER/OBSGRID/MADIS_DATA
@@ -64,13 +64,13 @@ mkdir -p $MADIS_DATA/LDAD/WISDOM/netCDF
 
 **NOTE:** the variable **MADIS_DATA** can be exported to the environment
 
-edit the time to download the data
+Edit the time to download the data
 
 ```
 nano ftp.par1.txt    ### set start/end
 ```
 
-make sure to export MADIS_DATA variable (see above)
+Make sure to export MADIS_DATA variable (see above)
 
 ```
 ./get_MADIS_Data_unix.pl
@@ -139,16 +139,15 @@ cd ../little_r
 ln -s /scratch/$USER/OBSGRID/MADIS_DATA/little_r_obs/*/metar/METAR_LITTLE_R_* .
 ```
 
-link all `met/little_r` files to OBSGRID root (folder that contains the obsgrid.exe)
+Link all `met/little_r` files to OBSGRID root (folder that contains the obsgrid.exe)
 
-script to link the files in little_r for obs:<date>
+Script to link the files in little_r for obs:<date>
 ```
 chmod +x create_links.sh
 ./create_links.sh
 ```
 
-copy the original working obsgrid namelist
-change the date
+Copy the original working obsgrid namelist and change the date
 ```
 cp namelist.obsgrid.d01 namelist.oa
 ./obsgrid.exe > log.obsgrid.d01
@@ -166,9 +165,7 @@ cp namelist.obsgrid.d02 namelist.oa
 ./obsgrid.exe > log.obsgrid.d03
 ```
 
-NOTE about the namelist options:
-
-- Recomended options
+NOTE about the Recomended namelist options:
 ```
 # to record4
 qc_test_error_max = .TRUE.
@@ -199,7 +196,7 @@ oa_type = 'Cressman'
 radius_influence = 20,15,10,5
 ```
 
-To clean results from previsous run
+To clean results from previsous run:
 ```
 rm *.nc qc_obs_* plotobs_out.d0* OBS_DOMAIN* obs:20* wrfsfdda_d0*
 ```
