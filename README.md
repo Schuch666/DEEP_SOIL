@@ -138,19 +138,19 @@ chmod +x create_links.sh
 
 Copy the original working obsgrid namelist and change the date
 ```
-cp namelist.obsgrid.d01 namelist.oa
+cp namelist.oa.d01 namelist.oa
 ./obsgrid.exe > log.obsgrid.d01
 ```
 
 change for the 2nd domain
 ```
-cp namelist.obsgrid.d02 namelist.oa
+cp namelist.oa.d02 namelist.oa
 ./obsgrid.exe > log.obsgrid.d02
 ```
 
 change for the 3rd the domain (and additional domains)
 ```
-cp namelist.obsgrid.d02 namelist.oa
+cp namelist.oa.d02 namelist.oa
 ./obsgrid.exe > log.obsgrid.d03
 ```
 
