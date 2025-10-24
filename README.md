@@ -1,6 +1,6 @@
 # DEEP_SOIL
 
-Repository to save updated instructions to run WRF using deep soil nudging options
+Repository with updated instructions to run WRF using deep soil nudging options
 
 ## 0. Get and install the software:
 ### MADIS library
