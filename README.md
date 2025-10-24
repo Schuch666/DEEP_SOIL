@@ -80,8 +80,9 @@ export MADIS_BIN=/scratch/$USER/OBSGRID/madis/bin
 export MADIS_STATIC=/scratch/$USER/OBSGRID/madis/static
 ```
 
-**NOTE:** the variable **MADIS_BIN** and **MADIS_STATIC** be exported to the environment
+**NOTE:** the variable **MADIS_BIN** and **MADIS_STATIC** must be exported to the environment.
 
+Edit api.par1.txt file:
 
 `nano api.par1.txt   ### set start/end`
 
@@ -92,6 +93,8 @@ NOTE from run_MADIS_API_unix.pl lines 124-127:
 ## # Line 5 end time in "YYYYMMDD HH" format
 ## my($etime) = shift(@pars);
 ```
+
+run MADIS API to download the observations:
 
 ```./run_MADIS_API_unix.pl > log_run_api.txt```
 
