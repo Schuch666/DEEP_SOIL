@@ -123,7 +123,7 @@ input:
 
 a. `met_em` files from WPS
 
-b. LITTLE r files from MADIS to LITTLE r (step 3)        
+b. LITTLE r files from MADIS to LITTLE r (step 2)        
 
 output: `wrfsfdda_d0*`
 
