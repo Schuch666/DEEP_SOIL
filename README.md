@@ -106,7 +106,7 @@ input file:  `sfcdump.txt`
 
 output files: `METAR_LITTLE_R_YYYY-MM-DD_HH`
 
-Need to edit and run the run_madis_to_little_r.ks script:
+Need to edit and run the `run_madis_to_little_r.ks` script:
 
 ```
 # set MADIS_DATA,MADIS_STATIC,CODE_DIR
