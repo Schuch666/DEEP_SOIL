@@ -155,7 +155,7 @@ cp namelist.oa.d02 namelist.oa
 
 change for the 3rd the domain (and additional domains)
 ```
-cp namelist.oa.d02 namelist.oa
+cp namelist.oa.d03 namelist.oa
 ./obsgrid.exe > log.obsgrid.d03
 ```
 
